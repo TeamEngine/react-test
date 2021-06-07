@@ -57,4 +57,4 @@ npx cypress run
 
 ## Submission
 
-Upload your test project to your Github account and send a link to the repository to us.
+Upload the test project to a private repository in your Github account and then give users `te-tom` and `te-mikael` access to that repository
