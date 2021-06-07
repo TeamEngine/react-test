@@ -1,0 +1,34 @@
+{
+  "extends": ["react-app", "airbnb", "plugin:prettier/recommended", "plugin:cypress/recommended"],
+  "parser": "babel-eslint",
+  "env": {
+    "node": true,
+    "es6": true,
+    "browser": true
+  },
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "no-param-reassign": [
+      "error",
+      { "props": true, "ignorePropertyModificationsFor": ["draftState"] }
+    ],
+    "react/prop-types": "off",
+    "consistent-return": "off",
+    "no-console": "warn",
+    "react/static-property-placement": "off",
+    "react/no-deprecated": "warn",
+    "react/state-in-constructor": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/destructuring-assignment": "off",
+    "react/no-array-index-key": "off",
+    "react/no-unused-state": "off",
+    "react/sort-comp": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-wrap-multilines": [
+      1,
+      {
+        "prop": "ignore"
+      }
+    ]
+  }
+}
