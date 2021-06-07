@@ -23,7 +23,7 @@ You shouldn't need to spend more than 8 hours (a typical day's work) implementin
 
 ## Setup
 
-- Fork this repository
+- Clone, fork or download a ZIP file of this repository
 - Run `npm install`
 - Run `npm start`
 
