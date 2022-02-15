@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+// eslint-disable-next-line no-unused-vars
 const defaultEmployee = {
   id: new Date().getTime(),
   firstName: "Abe",
@@ -7,11 +8,11 @@ const defaultEmployee = {
   email: "abe.simpson@example.com",
   age: 33,
   jobTitle: "Work grouch",
-  status: "ACTIVE",
+  jobStatus: "ACTIVE",
 };
 
 const initialState = {
-  employees_records: [defaultEmployee],
+  employees_records: [],
 };
 
 const employeeSlice = createSlice({
@@ -23,7 +24,7 @@ const employeeSlice = createSlice({
         payload: { ...employee, id: new Date().getTime() },
       }),
       reducer(draftState, action) {
-        draftState.employees_records = [action.payload];
+        draftState.employees_records = [...draftState.employees_records, action.payload];
       },
     },
   },

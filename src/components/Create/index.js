@@ -1,6 +1,8 @@
+/* eslint-disable no-unused-vars */
 import React, { useCallback } from "react";
 import { Formik } from "formik";
 import { useDispatch } from "react-redux";
+import { useHistory } from "react-router";
 import { Flex, Header } from "../styled";
 import FormField from "./FormField";
 import Select from "./Select";
@@ -10,8 +12,12 @@ import { saveNewEmployee } from "../../redux/employees/actionCreators";
 
 const Create = () => {
   const dispatch = useDispatch();
+  const history = useHistory();
+
   const submitForm = useCallback(
     employee => {
+      console.log(employee);
+
       dispatch(saveNewEmployee(employee));
     },
     [dispatch]
@@ -53,7 +59,7 @@ const Create = () => {
 
             <Select label="Job Status" name="jobStatus" options={jobStatusDropdown} />
 
-            <FormButtons className="formButtons-top" />
+            <FormButtons />
           </Flex>
         </Flex>
       </Formik>
