@@ -10,15 +10,21 @@ import FormButtons from "./FormButtons";
 import formValidationSchema from "./formValidationSchema";
 import { saveNewEmployee } from "../../redux/employees/actionCreators";
 
-const Create = () => {
+const Create = ({
+  match: {
+    params: { id },
+  },
+}) => {
   const dispatch = useDispatch();
   const history = useHistory();
 
   const submitForm = useCallback(
     employee => {
-      console.log(employee);
+      // console.log(employee);
 
       dispatch(saveNewEmployee(employee));
+
+      history.goBack();
     },
     [dispatch]
   );
