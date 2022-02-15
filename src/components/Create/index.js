@@ -1,8 +1,9 @@
 import React, { useCallback } from "react";
-import { Formik, Field } from "formik";
+import { Formik } from "formik";
 import { useDispatch } from "react-redux";
 import { Flex, Header } from "../styled";
 import FormField from "./FormField";
+import Select from "./Select";
 import FormButtons from "./FormButtons";
 import formValidationSchema from "./formValidationSchema";
 import { saveNewEmployee } from "../../redux/employees/actionCreators";
@@ -16,6 +17,13 @@ const Create = () => {
     [dispatch]
   );
 
+  const jobStatusDropdown = [
+    { key: "Select an option", value: "" },
+    { key: "Active", value: "ACTIVE" },
+    { key: "Leave of Absence", value: "LEAVE_OF_ABSENCE" },
+    { key: "Terminated", value: "TERMINATED" },
+  ];
+
   return (
     <>
       <Header>Create new employee</Header>
@@ -28,7 +36,7 @@ const Create = () => {
           email: "john.smith@outlook.com",
           age: "45",
           jobTitle: "Product Owner",
-          jobStatus: "ACTIVE",
+          jobStatus: "",
         }}
       >
         <Flex alignItems="center" justifyContent="center" height="100%">
@@ -43,13 +51,9 @@ const Create = () => {
 
             <FormField name="jobTitle" placeholder="Job Title" />
 
-            <Field as="select" name="status" className="job-status-field">
-              <option value="ACTIVE">Active</option>
-              <option value="LEAVE_OF_ABSENCE">Leave of Absence</option>
-              <option value="TERMINATED">Terminated</option>
-            </Field>
+            <Select label="Job Status" name="jobStatus" options={jobStatusDropdown} />
 
-            <FormButtons />
+            <FormButtons className="formButtons-top" />
           </Flex>
         </Flex>
       </Formik>
