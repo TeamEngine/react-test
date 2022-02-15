@@ -12,6 +12,7 @@ const defaultEmployee = {
 };
 
 const initialState = {
+  // removed defaultEmployee
   employees_records: [],
 };
 
@@ -27,9 +28,39 @@ const employeeSlice = createSlice({
         draftState.employees_records = [...draftState.employees_records, action.payload];
       },
     },
+
+    editEmployee: {
+      prepare: employee => ({
+        payload: { ...employee },
+      }),
+      reducer(draftState, action) {
+        const i = draftState.employees_records.findIndex(e => e.id === action.payload.id);
+
+        const employeeRecord = [...draftState.employees_records];
+
+        employeeRecord.splice(i, 1, action.payload); // updateEmployee
+
+        draftState.employees_records = employeeRecord;
+      },
+    },
+
+    removeEmployee: {
+      prepare: employeeId => ({
+        payload: employeeId,
+      }),
+      reducer(draftState, action) {
+        const i = draftState.employees_records.findIndex(e => e.id === action.payload);
+
+        const employeeRecord = [...draftState.employees_records];
+
+        employeeRecord.splice(i, 1); // removing one record from array
+
+        draftState.employees_records = employeeRecord;
+      },
+    },
   },
 });
 
-export const { saveNewEmployee } = employeeSlice.actions;
+export const { saveNewEmployee, editEmployee, removeEmployee } = employeeSlice.actions;
 
 export default employeeSlice.reducer;
