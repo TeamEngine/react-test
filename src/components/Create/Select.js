@@ -8,7 +8,7 @@ function Select(props) {
   const { errors, touched } = useFormikContext();
 
   return (
-    <div>
+    <div className="select-field">
       <label htmlFor={name}>{label}</label> &ensp;
       <Field as="select" id={name} name={name} {...rest}>
         {options.map(option => {
