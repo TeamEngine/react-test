@@ -17,6 +17,13 @@ const formValidationSchema = yup.object().shape({
     .max(255, "The maximum number of characters is 255")
     .email("Invalid email address")
     .required("Required"),
+  jobStatus: yup.string().required("Employment status required!"),
+  jobTitle: yup.string().required("Jop position required!"),
+  age: yup
+    .number()
+    .min(18)
+    .label("Age")
+    .required("Age required!"),
 });
 
 export default formValidationSchema;
