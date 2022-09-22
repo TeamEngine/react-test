@@ -9,7 +9,8 @@ const Button = styled.button`
 
   text-align: center;
   height: 33px;
-  background-color: ${({ backgroundColor = "background" }) => theme.buttons[backgroundColor]};
+  background-color: ${({ backgroundColor = "background" }) =>
+    theme.buttons[backgroundColor]};
   color: ${theme.buttons.text};
   border: none;
   border-radius: 30px;
