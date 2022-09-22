@@ -8,7 +8,12 @@ const View = () => {
   return (
     <>
       <Header data-cy="header">View Employees</Header>
-      <Flex direction="column" alignItems="center" justifyContent="center" marginTop="lg">
+      <Flex
+        direction="column"
+        alignItems="center"
+        justifyContent="center"
+        marginTop="lg"
+      >
         <Box>
           <Button data-cy="backButton" onClick={() => history.goBack()}>
             Back

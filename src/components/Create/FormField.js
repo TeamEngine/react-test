@@ -21,7 +21,9 @@ const FormField = ({ name, placeholder }) => {
         )}
       </Field>
       {errors[name] && touched[name] && (
-        <ErrorMessage data-cy={`${name}ErrorMessage`}>{errors[name]}</ErrorMessage>
+        <ErrorMessage data-cy={`${name}ErrorMessage`}>
+          {errors[name]}
+        </ErrorMessage>
       )}
     </Box>
   );

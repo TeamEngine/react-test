@@ -1,5 +1,10 @@
 {
-  "extends": ["react-app", "airbnb", "plugin:prettier/recommended", "plugin:cypress/recommended"],
+  "extends": [
+    "react-app",
+    "airbnb",
+    "plugin:prettier/recommended",
+    "plugin:cypress/recommended"
+  ],
   "parser": "babel-eslint",
   "env": {
     "node": true,
@@ -28,6 +33,23 @@
       1,
       {
         "prop": "ignore"
+      }
+    ],
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "ignore",
+        "objects": "ignore",
+        "imports": "ignore",
+        "exports": "ignore",
+        "functions": "ignore"
       }
     ]
   }

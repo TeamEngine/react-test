@@ -8,14 +8,25 @@ const Overview = () => {
   return (
     <>
       <Header data-cy="header">My Employees</Header>
-      <Flex height="80%" direction="column" alignItems="center" justifyContent="center">
+      <Flex
+        height="80%"
+        direction="column"
+        alignItems="center"
+        justifyContent="center"
+      >
         <Box marginBottom="lg">
-          <Button data-cy="newEmployeeButton" onClick={() => history.push("/create")}>
+          <Button
+            data-cy="newEmployeeButton"
+            onClick={() => history.push("/create")}
+          >
             Add new employees
           </Button>
         </Box>
         <Box>
-          <Button data-cy="viewEmployeesButton" onClick={() => history.push("/view")}>
+          <Button
+            data-cy="viewEmployeesButton"
+            onClick={() => history.push("/view")}
+          >
             View all employees
           </Button>
         </Box>
