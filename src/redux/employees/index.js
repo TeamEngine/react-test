@@ -7,11 +7,11 @@ const defaultEmployee = {
   email: "abe.simpson@example.com",
   age: 33,
   jobTitle: "Work grouch",
-  status: "ACTIVE"
+  status: "ACTIVE",
 };
 
 const initialState = {
-  employees_records: [defaultEmployee]
+  employees_records: [defaultEmployee],
 };
 
 const employeeSlice = createSlice({
@@ -20,13 +20,13 @@ const employeeSlice = createSlice({
   reducers: {
     saveNewEmployee: {
       prepare: employee => ({
-        payload: { ...employee, id: new Date().getTime() }
+        payload: { ...employee, id: new Date().getTime() },
       }),
       reducer(draftState, action) {
         draftState.employees_records = [action.payload];
-      }
-    }
-  }
+      },
+    },
+  },
 });
 
 export const { saveNewEmployee } = employeeSlice.actions;

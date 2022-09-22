@@ -42,6 +42,15 @@
         "unnamedComponents": "arrow-function"
       }
     ],
-    "comma-dangle": ["error", "never"]
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "ignore",
+        "objects": "ignore",
+        "imports": "ignore",
+        "exports": "ignore",
+        "functions": "ignore"
+      }
+    ]
   }
 }

@@ -180,5 +180,5 @@ export {
   positionUtil as position,
   interactionUtil as interaction,
   textUtil as text,
-  stateUtil as state
+  stateUtil as state,
 };
