@@ -5,8 +5,14 @@ describe("Examine overview content and functionality", () => {
 
   it("contains the correct titles", () => {
     cy.get("[data-cy=header]").should("contain", "My Employees");
-    cy.get("[data-cy=newEmployeeButton]").should("contain", "Add new employees");
-    cy.get("[data-cy=viewEmployeesButton]").should("contain", "View all employees");
+    cy.get("[data-cy=newEmployeeButton]").should(
+      "contain",
+      "Add new employees"
+    );
+    cy.get("[data-cy=viewEmployeesButton]").should(
+      "contain",
+      "View all employees"
+    );
   });
 
   it("navigates correctly when clicking on the buttons", () => {
