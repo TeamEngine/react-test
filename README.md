@@ -5,7 +5,7 @@ The task is to add additional functionality to our overly simple employee record
 Add the following:
 
 - Additional fields to the employee creation page
-  - Birthdate
+  - Birth date
   - Status - `ACTIVE` `LEAVE_OF_ABSENCE` `TERMINATED`
   - Job title
 - Enhance the page for all employees
