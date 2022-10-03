@@ -5,7 +5,7 @@ const defaultEmployee = {
   firstName: "Abe",
   surname: "Simpson",
   email: "abe.simpson@springfield.com",
-  birthdate: "1907-05-25",
+  birthDate: "1907-05-25",
   jobTitle: "Work grouch",
   status: "ACTIVE",
 };
