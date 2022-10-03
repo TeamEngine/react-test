@@ -1,17 +1,17 @@
 ## Introduction
 
-The task is to add additional functionality to our overly simple employee records application. The application is built using React, Redux, Formik and Styled-components at its base. Your solution should be using these as a basis, although creative freedom is encouraged.
+The task is to add additional functionality to our overly simple employee records application. The application is built using React, Redux, Formik and styled-components. Build the speficied functionality upon the existing project, although creative freedom is encouraged.
 
 Add the following:
 
-- Additional fields to the employee creation page
-  - Birth date
-  - Status - `ACTIVE` `LEAVE_OF_ABSENCE` `TERMINATED`
+- Additional fields to the employee creation page. A complete example of an `employee` is available in `src/redux/employees/index.js`.
+  - Birth date - `YYYY-MM-DD`
+  - Status - <`ACTIVE` | `LEAVE_OF_ABSENCE` | `TERMINATED`>
   - Job title
 - Enhance the page for all employees
   - Display all employees
-  - Edit/delete
-  - Other functions that might be useful when viewing potentially large lists of data
+  - Edit/Delete
+  - Functions that might be useful when viewing potentially large lists of data
 
 Optional:
 
@@ -19,7 +19,11 @@ Optional:
 
 ## Time
 
-You shouldn't need to spend more than 8 hours (a typical day's work) implementing this.
+You should aim to spend around 8 hours of work on this code test.
+
+## Required technologies
+
+- [node](https://nodejs.org/en/download/)
 
 ## Setup
 
@@ -29,7 +33,7 @@ You shouldn't need to spend more than 8 hours (a typical day's work) implementin
 
 ## What's expected?
 
-A working application with the above functionality, perhaps a little more. We we would like to see an eye for detail and that the code was written for maintainability.
+A working application with the above functionality, perhaps a little more. We would like to see an eye for detail and that the code was written for maintainability and scalability.
 
 Things we're looking for:
 
@@ -41,7 +45,7 @@ Things we're looking for:
 
 ## Testing
 
-TeamEngine strives to automate testing as much as possible and for that we use [Cypress](https://www.cypress.io/). We would like to see test cases that make sense and actually prove that something works.
+We would like to see the existing cypress test suite extended to test/verify functionality added by you. Documentation can be found [here](https://www.cypress.io/).
 
 ### Running tests
 
@@ -59,4 +63,4 @@ npx cypress run
 
 ## Submission
 
-Upload the test project to a private repository in your Github account and then give users `te-joel` and `te-mikael` access to that repository
+Upload the test project to a private repository in your Github account and then give users `martinhybergTE` and `agnessuTE` access to that repository.
