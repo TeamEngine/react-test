@@ -5,7 +5,7 @@ The task is to add additional functionality to our overly simple employee record
 Add the following:
 
 - Additional fields to the employee creation page
-  - Age
+  - Birth date
   - Status - `ACTIVE` `LEAVE_OF_ABSENCE` `TERMINATED`
   - Job title
 - Enhance the page for all employees
@@ -46,11 +46,13 @@ TeamEngine strives to automate testing as much as possible and for that we use [
 ### Running tests
 
 Cypress comes with a test GUI which can be opened in Chrome. To open the GUI, use:
+
 ```
 npx cypress open
 ```
 
 If you want to run Cypress in headless mode instead, run the following command:
+
 ```
 npx cypress run
 ```

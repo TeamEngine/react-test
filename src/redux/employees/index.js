@@ -4,8 +4,8 @@ const defaultEmployee = {
   id: new Date().getTime(),
   firstName: "Abe",
   surname: "Simpson",
-  email: "abe.simpson@example.com",
-  age: 33,
+  email: "abe.simpson@springfield.com",
+  birthDate: "1907-05-25",
   jobTitle: "Work grouch",
   status: "ACTIVE",
 };
@@ -23,7 +23,10 @@ const employeeSlice = createSlice({
         payload: { ...employee, id: new Date().getTime() },
       }),
       reducer(draftState, action) {
-        draftState.employees_records = [action.payload];
+        draftState.employees_records = [
+          ...draftState.employees_records,
+          action.payload,
+        ];
       },
     },
   },
