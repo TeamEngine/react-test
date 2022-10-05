@@ -1,47 +1,52 @@
 ## Introduction
 
-The task is to add additional functionality to our overly simple employee records application. The application is built using React, Redux, Formik and Styled-components at its base. Your solution should be using these as a basis, although creative freedom is encouraged.
+The task is to make to our overly simple employee records tool useable. The application is built using React, Redux, Formik and styled-components. Build the specified functionality upon the existing project, although creative freedom is encouraged.
 
-Add the following:
+The project is built with three views; an start page, list view and a create view. The data consists of a list of `employee` records store in redux. A complete example of an `employee` entry is available in `src/redux/employees/index.js`.
 
-- Additional fields to the employee creation page
-  - Birth date
-  - Status - `ACTIVE` `LEAVE_OF_ABSENCE` `TERMINATED`
+Your task is to extend the current funcitonality and implement new features and views. Here is the list of things to be implemented:
+
+- Additional fields to the employee creation page (`src/components/Create/index.js`).
+  - Birth date - `YYYY-MM-DD`
+  - Status - <`ACTIVE` | `LEAVE_OF_ABSENCE` | `TERMINATED`>
   - Job title
-- Enhance the page for all employees
+- Enhance the page for all employees (`src/components/View/index.js`)
   - Display all employees
-  - Edit/delete
-  - Other functions that might be useful when viewing potentially large lists of data
-
-Optional:
-
-- Creative flare - enhance the application's styling
+  - Edit/Delete
+  - Functions that might be useful when viewing potentially large lists of data
+- Optional:
+  - Creative flare - enhance the application's styling
 
 ## Time
 
-You shouldn't need to spend more than 8 hours (a typical day's work) implementing this.
+We don't expect you to spend no more than 8 hours on this test.
+
+## Required technologies
+
+- [node](https://nodejs.org/en/download/)
+- redux dev tools (not required but very helpful)
 
 ## Setup
 
-- Clone, fork or download a ZIP file of this repository
+- Fork or download a ZIP file of this repository
 - Run `npm install`
 - Run `npm start`
 
 ## What's expected?
 
-A working application with the above functionality, perhaps a little more. We we would like to see an eye for detail and that the code was written for maintainability.
+A working application with the above functionality, perhaps a little more. We would like to see an eye for detail and that the code was written for maintainability and scalability.
 
 Things we're looking for:
 
 - Naming
 - Structure
-- A sound understanding of the basics (JSX, properties, hooks etc)
-- Choice and usage of components
+- A sound understanding of the basics (JSX, hooks, redux etc)
+- Usage of components
 - User interaction - feedback
 
 ## Testing
 
-TeamEngine strives to automate testing as much as possible and for that we use [Cypress](https://www.cypress.io/). We would like to see test cases that make sense and actually prove that something works.
+We would like to see the existing cypress test suite extended to test/verify functionality added by you. Documentation can be found [here](https://docs.cypress.io/guides/overview/why-cypress).
 
 ### Running tests
 
@@ -59,4 +64,4 @@ npx cypress run
 
 ## Submission
 
-Upload the test project to a private repository in your Github account and then give users `te-joel` and `te-mikael` access to that repository
+To submit the test, either share your forked repo with our developers (`martinhybergTE` or `agnessuTE`) on github or send a packaged file with your contact person.
