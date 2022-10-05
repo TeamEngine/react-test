@@ -19,7 +19,7 @@ Your task is to extend the current funcitonality and implement new features and 
 
 ## Time
 
-You should aim to spend around 8 hours of work on this code test.
+We don't expect you to spend no more than 8 hours on this test.
 
 ## Required technologies
 
