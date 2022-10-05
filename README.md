@@ -1,6 +1,6 @@
 ## Introduction
 
-The task is to make to our overly simple employee records tool useable. The application is built using React, Redux, Formik and styled-components. Build the speficied functionality upon the existing project, although creative freedom is encouraged.
+The task is to make to our overly simple employee records tool useable. The application is built using React, Redux, Formik and styled-components. Build the specified functionality upon the existing project, although creative freedom is encouraged.
 
 The project is built with three views; an start page, list view and a create view. The data consists of a list of `employee` records store in redux. A complete example of an `employee` entry is available in `src/redux/employees/index.js`.
 
