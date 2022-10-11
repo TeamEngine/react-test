@@ -28,7 +28,7 @@ We don't expect you to spend no more than 8 hours on this test.
 
 ## Setup
 
-- Fork or download a ZIP file of this repository
+- Download a ZIP file of this repository
 - Run `npm install`
 - Run `npm start`
 
@@ -64,4 +64,4 @@ npx cypress run
 
 ## Submission
 
-To submit the test, either share your forked repo with our developers (`martinhybergTE` or `agnessuTE`) on github or send a packaged file with your contact person.
+To submit the test, either share a private repository with our developers (`martinhybergTE` or `agnessuTE`) on github or send a packaged repository to your contact person.
