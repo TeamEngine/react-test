@@ -19,7 +19,7 @@ Your task is to extend the current funcitonality and implement new features and 
 
 ## Time
 
-We don't expect you to spend no more than 8 hours on this test.
+We don't expect you to spend more than 8 hours on this test. If you are under time constraints, complete the tasks you started and we can discuss the rest in the interview.
 
 ## Required technologies
 
