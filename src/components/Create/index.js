@@ -7,11 +7,14 @@ import FormButtons from "./FormButtons";
 import formValidationSchema from "./formValidationSchema";
 import { saveNewEmployee } from "../../redux/employees/actionCreators";
 
+const EMPLOYEE_STATUS = ["ACTIVE ", "LEAVE_OF_ABSENCE", "TERMINATED"];
+
 const Create = () => {
   const dispatch = useDispatch();
   const submitForm = useCallback(
-    employee => {
+    (employee, actions) => {
       dispatch(saveNewEmployee(employee));
+      actions.resetForm();
     },
     [dispatch]
   );
@@ -26,6 +29,9 @@ const Create = () => {
           firstName: "",
           surname: "",
           email: "",
+          birthDate: "",
+          status: "",
+          jobTitle: "",
         }}
       >
         <Flex alignItems="center" justifyContent="center" height="100%">
@@ -33,6 +39,14 @@ const Create = () => {
             <FormField name="firstName" placeholder="First name" />
             <FormField name="surname" placeholder="Surname" />
             <FormField name="email" placeholder="Email" />
+            <FormField name="birthDate" placeholder="Birth date" type="date" />
+            <FormField
+              name="status"
+              placeholder="Please select an option"
+              type="select"
+              options={EMPLOYEE_STATUS}
+            />
+            <FormField name="jobTitle" placeholder="Job title" />
             <FormButtons />
           </Flex>
         </Flex>
