@@ -23,7 +23,8 @@ We don't expect you to spend more than 8 hours on this test. If you are under ti
 
 ## Required technologies
 
-- [node](https://nodejs.org/en/download/)
+- [node v16](https://nodejs.org/en/download/releases).
+  - [`nvm`](https://github.com/nvm-sh/nvm) can help with node versioning.
 - redux dev tools (not required but very helpful)
 
 ## Setup
