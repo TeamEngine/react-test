@@ -65,4 +65,4 @@ npx cypress run
 
 ## Submission
 
-To submit the test, either share a private repository with our developers (`martinhybergTE` and `agnessuTE` and `kaishleyTE`) on github or send a packaged repository to your contact person.
+To submit the test, share a private repository with our developers (`martinhybergTE` and `agnessuTE` and `kaishleyTE`) on github.
