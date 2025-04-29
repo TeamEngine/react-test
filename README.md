@@ -1,3 +1,5 @@
+# DEPRECATED! This has not been used as the code test since 2023. Use the one on TeamEngines gitlab instead [here](https://gitlab.teamengine.se/te/react-code-test).
+
 ## Introduction
 
 The task is to make to our overly simple employee records tool useable. The application is built using React, Redux, Formik and styled-components. Build the specified functionality upon the existing project, although creative freedom is encouraged.
